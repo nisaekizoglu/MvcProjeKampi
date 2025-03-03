@@ -1,0 +1,149 @@
+﻿<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #be2edd;
+            color: #333;
+        }
+
+        h1 {
+            color: #7d5fff;
+        }
+
+        .btn-primary {
+            background-color: #17c0eb;
+            border-color: #17c0eb;
+        }
+
+            .btn-primary:hover {
+                background-color: #3ae374;
+                border-color: #3ae374;
+            }
+
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            background-color: #be2edd;
+            color: white;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card-body {
+            background-color: white;
+            padding: 15px;
+        }
+
+        .nav-pills .nav-link {
+            border-radius: 5px;
+            color: #555;
+        }
+
+            .nav-pills .nav-link.active {
+                background-color: #17c0eb;
+                color: white;
+            }
+
+        .btn {
+            border-radius: 5px;
+        }
+
+        .btn-default {
+            background-color: #f4f6f9;
+            border-color: #ddd;
+            color: #333;
+        }
+
+            .btn-default:hover {
+                background-color: #FD7272;
+                color: white;
+            }
+
+        .table-hover tbody tr:hover {
+            background-color: #f1f5fa;
+        }
+
+        .mailbox-messages .mailbox-name a {
+            color: #22a6b3;
+        }
+
+        .mailbox-messages .mailbox-subject {
+            color: #555;
+        }
+
+        .mailbox-messages .mailbox-date {
+            color: #888;
+        }
+
+        .mailbox-star i {
+            color: #22a6b3;
+        }
+    </style>
+</head>
+
+<div class="col-md-3">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Seçenekler</h3>
+        </div>
+        <div class="card-body p-0">
+            <ul class="nav nav-pills flex-column">
+
+                <li class="nav-item active">
+                    <a href="/WriterPanelMessage/Inbox/" class="nav-link">
+                        <i class="fas fa-inbox"></i> Gelen Mesajlar
+                        <span class="badge bg-primary float-right">12</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/WriterPanelMessage/Sendbox/" class="nav-link">
+                        <i class="far fa-envelope"></i> Gönderilen Mesajlar
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="far fa-file-alt"></i> Taslaklar
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-filter"></i> Spam
+                        <span class="badge bg-warning float-right">65</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="far fa-trash-alt"></i> Çöp Kutusu
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Etiketler</h3>
+        </div>
+        <div class="card-body p-0">
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="far fa-circle text-danger"></i> Birincil
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="far fa-circle text-warning"></i> Tanıtım
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="far fa-circle text-primary"></i> Sosyal Medya
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

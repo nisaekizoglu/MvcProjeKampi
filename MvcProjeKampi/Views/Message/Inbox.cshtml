@@ -1,0 +1,162 @@
+﻿@using EntityLayer.Concrete
+@model List<Message>
+
+@{
+    ViewBag.Title = "Inbox";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #be2edd;
+            color: #333;
+        }
+
+        h1 {
+            color: #7d5fff;
+        }
+
+        .btn-primary {
+            background-color: #17c0eb;
+            border-color: #17c0eb;
+        }
+
+            .btn-primary:hover {
+                background-color: #3ae374;
+                border-color: #3ae374;
+            }
+
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            background-color: #be2edd;
+            color: white;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card-body {
+            background-color: white;
+            padding: 15px;
+        }
+
+        .nav-pills .nav-link {
+            border-radius: 5px;
+            color: #555;
+        }
+
+            .nav-pills .nav-link.active {
+                background-color: #17c0eb;
+                color: white;
+            }
+
+        .btn {
+            border-radius: 5px;
+        }
+
+        .btn-default {
+            background-color: #f4f6f9;
+            border-color: #ddd;
+            color: #333;
+        }
+
+            .btn-default:hover {
+                background-color: #FD7272;
+                color: white;
+            }
+
+        .table-hover tbody tr:hover {
+            background-color: #f1f5fa;
+        }
+
+        .mailbox-messages .mailbox-name a {
+            color: #22a6b3;
+        }
+
+        .mailbox-messages .mailbox-subject {
+            color: #555;
+        }
+
+        .mailbox-messages .mailbox-date {
+            color: #888;
+        }
+
+        .mailbox-star i {
+            color: #22a6b3;
+        }
+    </style>
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Mesaj Kutusu</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="row">
+            <a href="/Message/NewMessage/" class="btn btn-primary btn-block mb-3">Yeni Mesaj</a>
+            @Html.Action("ContactSideBar", "Contact")
+
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Gelen Mesajlar</h3>
+                        <div class="card-tools">
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control" placeholder="Mail'de ara">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body p-0">
+                        <div class="table-responsive mailbox-messages">
+                            <table class="table table-hover table-striped">
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <div class="icheck-primary">
+                                                    <input type="checkbox" value="" id="check1">
+                                                    <label for="check1"></label>
+                                                </div>
+                                            </td>
+                                            <td class="mailbox-star"><a href="/Message/GetInBoxMessagetDetails/@item.MessageId"><i class="fas fa-star"></i></a></td>
+                                            <td class="mailbox-name"><a href="/Message/GetInBoxMessagetDetails/@item.MessageId">@item.Sender</a></td>
+                                            <td class="mailbox-subject">
+                                                <b>@item.Subject</b> - @item.MessageContent.Substring(0, 30)...
+                                            </td>
+                                            <td class="mailbox-attachment"></td>
+                                            <td class="mailbox-date">@(((DateTime)item.MessageDate).ToString("dd-MMM-yyyy"))</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+
