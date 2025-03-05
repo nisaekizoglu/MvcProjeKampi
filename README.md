@@ -32,7 +32,7 @@
 
 💠 Projede kullanılan teknolojiler ve proje süreci anlatılmıştır. 
 
-# **💠 Kullanılan Teknolojiler ve Projenin Geliştirme Araçları💠 **
+# **💠 Kullanılan Teknolojiler ve Projenin Geliştirme Araçları 💠**
 
 💠 Asp.Net Mvc5 
 
