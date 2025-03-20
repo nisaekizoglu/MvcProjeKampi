@@ -2,7 +2,7 @@
 
 💠 Bu proje Ekşi Sözlük benzeri bir uygulamadır. Admin paneli, kullanıcı arayüzü ve projenin anlatıldığı vitrinden oluşmaktadır. 
 
-## **💠 Admin Paneli 💠**
+## **💠 Admin Paneli **
 
 💠 Kullanıcıların oluşturdukları yazıların başlılarına göre kategoriler listelenir. Kategoriler üzerinde CRUD işlemleri admin tarafından gerçekleştirilebilir.
 
@@ -16,7 +16,7 @@
 
 💠 Admin panelinin galerisi bulunmaktadır. 
 
-## **💠 Yazar Paneli 💠**
+## **💠 Yazar Paneli **
 
 💠 Yazar kendi profilini görüntüleyebilir ve düzenleme yapabilir.
 
@@ -28,11 +28,11 @@
 
 💠 Yazar oluşturduğu başlıklara yazmış olduğu içeriği görüntüleyebilir. 
 
-## **💠 Vitrin 💠** 
+## **💠 Vitrin ** 
 
 💠 Projede kullanılan teknolojiler ve proje süreci anlatılmıştır. 
 
-# **💠 Kullanılan Teknolojiler ve Projenin Geliştirme Araçları 💠**
+## **💠 Kullanılan Teknolojiler ve Projenin Geliştirme Araçları **
 
 💠 Asp.Net Mvc5 
 
@@ -56,9 +56,9 @@
 
 💠 Authentication / Authorize / Fluent Validation
 
-# **💠 Proje Görselleri 💠**
+# **💠 Proje Görselleri **
 
-## **💠 Admin Paneli 💠**
+## ** Admin Paneli **
 
 ![Ekran görüntüsü 2025-03-03 170156](https://github.com/user-attachments/assets/c19ef578-21f0-4f92-b1b3-9b93e16f9cc0)
 
@@ -80,7 +80,7 @@
 
 ![Ekran görüntüsü 2025-03-03 170348](https://github.com/user-attachments/assets/3f54c1bf-9d3a-4a45-afac-b5efb2dd207d)
 
-## **💠 Kullanıcı Arayüzü 💠**
+## ** Kullanıcı Arayüzü **
 
 ![Ekran görüntüsü 2025-03-03 170147](https://github.com/user-attachments/assets/d1926755-d85c-4393-8b63-49497077c662)
 
